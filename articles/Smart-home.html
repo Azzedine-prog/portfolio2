@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="./CSS/style.css">
+  <link rel="stylesheet" media = 'screen and (max-width: 768px)' href="./CSS/mobile.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato|Staatliches&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+  <script src="https://kit.fontawesome.com/85a5fdd30e.js" async></script>
+
+  <title>Smart Parking Prject</title>
+</head>
+<body>
+  <nav id="main-nav">
+    <div class="container">
+      <img src="img/logo.png" alt="NewsMedia" class="logo">
+      <div class = 'social'>
+        <a href="https://www.facebook.com/azzedine.lakhdar.inpt" target = 'blank'><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://twitter.com/azzedin37740194" target = 'blank'><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="https://linkedin.com/in/azzedine-lakhdar/"" target = 'blank'><i class="fab fa-linkedin fa-2x"></i></a>
+        <a href="https://github.com/Azzedine-prog" target = 'blank'><i class="fab fa-github fa-2x"></i></a>
+      </div>
+      <ul>
+        <li><a href="https://azzedine-lakhdar.netlify.app" >Home</a></li>
+        <li><a href="https://azzedine-lakhdar.netlify.app/#about" >About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="article">
+    <div class="container">
+      <div class="page-container">
+        <article class="card">
+          <img src="img/articles/parking.png" alt="article">
+          <h1 class='l-heading'>Smart parking</h1>
+          <div class="meta">
+            <small>
+              <i class="fas fa-user"></i>Written by Azzedine Lakhdar. September 13, 2020
+            </small>
+            <div class="category category-ent">Projet AZZEDINE</div>
+          </div>
+          <p>Les membres de ce club paye un prix pour benificier d’un nombre précis de services et a chaque 
+		  fois un membre accede au parking d’un service il sera payé automatiquement modifiant le solde de sa carte 
+		  ,Au moment ou l’utilisateur se place a l’entrée de parking  un capteur ultrason lui détecte et  
+		  l’utilisateur voit un message qui lui demande de passer sa carte. La carte est passé dans un détecteur qui  
+		  va vérifier la carte pour savoir si le membre est vraiment un client et que son solde est suffisant et lui 
+		  donner l’accès au parking de club.</p>
+		  
+          <h3>materiel necissitant</h3>
+		  <p>
+		  <b>Arduino Uno</b> R3 : Pour controller notre système</br>
+			<b>Ecran LCD 16x2</b> :pour réaliser une communication avec  l’utilisateur.</br>
+			<b>Servomoteur : </b>Nous avons utilisé un servomoteur pour bloquer et permettre l’acces au parking.</br>
+			<b>RFID </b>(Radio Frequency Identification): qui va nous permettre de donner l’acces au membre au parking lorsque la bonne carte est présenté au lecteur.
+			</br>
+			<b>Led RGB :</b>pour  exprimer l’état de systeme(Rouge pas de voiture-Bleu voiture devant le parking-Vert accés autorisé)
+			</br>
+			<b>Capteur de température et humidité DHT11 
+</b> pour mesurer la température et l'humidité ambiantes que nous allons récupérer avec notre carte Arduino.</br>
+		  </p>
+		  <br>
+		  <h3>CODE</h3>
+		  <iframe src=https://create.arduino.cc/editor/lakhdarazzedine/e6d3c9e9-de2e-4d0a-8546-dead10eb5236/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+        </article>
+        <!--<aside class="card bg-secondary">
+          <h2>Join Our Club</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, nulla!</p>
+          <a href="#" class='btn btn-dak btn-block'>Join Now</a>
+        </aside>-->
+        <!--<aside id="categories" class="card">
+          <h2>Categories</h2>
+          <ul class="list">
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Sports</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Entertainment</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Technology</a></li>
+            <li><a href="#"><i class="fas fa-chevron-right"></i>Fashion</a></li>
+          </ul>
+        </aside>-->
+      </div>
+    </div>
+  </section>
+  
+  <footer id = 'main-footer' class = 'py-2'>
+    <div class="container footer-container">
+      <!--<div>
+        <img src="img/logo_light.png" alt="logo">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium quod ratione veniam sit harum excepturi sed quos dignissimos maxime consequatur.</p>
+      </div>
+      <div>
+        <h3>Email Newsletter</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <form>
+          <input type="email" placeholder="Email:" required>
+          <input type="submit" value="Subscribe" class = 'btn btn-primary'>
+        </form>
+      </div>
+      <div>
+        <h3>Site Links</h3>
+        <ul class = 'list'>
+          <li><a href="#">Help and Support</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Join our Club</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, provident.</p>
+        <a href="#" class="btn btn-secondary">Join Now</a>
+      </div>-->
+      <div>
+        <p>
+          AZZEDINE 2021, All Rights reserved. 
+        </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
