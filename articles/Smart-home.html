@@ -11,7 +11,7 @@
   <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
   <script src="https://kit.fontawesome.com/85a5fdd30e.js" async></script>
 
-  <title>Smart Parking Prject</title>
+  <title>full home control Project</title>
 </head>
 <body>
   <nav id="main-nav">
@@ -34,36 +34,77 @@
     <div class="container">
       <div class="page-container">
         <article class="card">
-          <img src="img/articles/parking.png" alt="article">
-          <h1 class='l-heading'>Smart parking</h1>
+          <img src="img/articles/smart-home-template.png" alt="article">
+          <h1 class='l-heading'>full home control</h1>
           <div class="meta">
             <small>
-              <i class="fas fa-user"></i>Written by Azzedine Lakhdar. September 13, 2020
+              <i class="fas fa-user"></i>Written by Azzedine Lakhdar. September 21, 2021
             </small>
             <div class="category category-ent">Projet AZZEDINE</div>
           </div>
-          <p>Les membres de ce club paye un prix pour benificier d’un nombre précis de services et a chaque 
-		  fois un membre accede au parking d’un service il sera payé automatiquement modifiant le solde de sa carte 
-		  ,Au moment ou l’utilisateur se place a l’entrée de parking  un capteur ultrason lui détecte et  
-		  l’utilisateur voit un message qui lui demande de passer sa carte. La carte est passé dans un détecteur qui  
-		  va vérifier la carte pour savoir si le membre est vraiment un client et que son solde est suffisant et lui 
-		  donner l’accès au parking de club.</p>
+          <p><b>Les objectifs de ce projet sont :</b>
+                                <ol type="i">
+                      <li>Gérer la maison d’une façon intelligente, on va intégrer un système d’éclairage
+automatique au sein de la maison pour optimiser l’énergie électrique.</li>
+                      <li>Permettre à l’utilisateur à n’importe où et à chaque moment de vérifier l’état de la
+maison grâce à un site web.(L’utilisateur va avoir l’accès au température, humidité,
+l’état des dispositifs et appareils au sein de la maison)
+                                arm m4 </li>
+                        <li>
+                          L’utilisateur va pouvoir aussi agir et contrôler (allumer ou éteindre) les appareils de
+la maison à distance
+                        </li>
+                        <li>
+                          Sécuriser l’accès au garage en permettant à l’utilisateur grâce au site web de savoir
+l’état de garage, savoir le temps où il a été ouvert.
+                        </li>
+                        <li>
+                          De plus l’utilisateur peut agir sur le garage depuis le site et choisir le mode
+d’ouverture, soit l’ouvrir depuis le site, ou le mode manuelle.
+                        </li>
+                    </ol>
+                  </p>
 		  
           <h3>materiel necissitant</h3>
 		  <p>
-		  <b>Arduino Uno</b> R3 : Pour controller notre système</br>
-			<b>Ecran LCD 16x2</b> :pour réaliser une communication avec  l’utilisateur.</br>
-			<b>Servomoteur : </b>Nous avons utilisé un servomoteur pour bloquer et permettre l’acces au parking.</br>
-			<b>RFID </b>(Radio Frequency Identification): qui va nous permettre de donner l’acces au membre au parking lorsque la bonne carte est présenté au lecteur.
+		  <b>Arduino Uno:</b> va être utiliser pour lire les valeurs mesurées par les capteurs, et aussi pour
+commander le servomoteur qui va nous servir dans notre prototype pour ouvrir et fermer le
+garage.
+</br>
+			<b>Raspberry pi:</b> va commander les appareils de maison (les allumer ou éteindre), et aussi va
+communiquer les différentes informations à un site web dont l’utilisateur va avoir l’accès.</br>
+			<b>Servomoteur : </b>Nous avons l’utilisé dans notre prototype pour ouvrir et fermer le garage</br>
+			<b>Capteur de température et humidité DHT11 :</b>(On va l’utiliser pour
+mesurer la température et l'humidité ambiantes (d’une pièce de
+la maison dans notre prototype).Nous allons récupérer
+les mesures avec notre carte Arduino qui va les transmettre
+au Raspberry qui va les afficher au site
 			</br>
-			<b>Led RGB :</b>pour  exprimer l’état de systeme(Rouge pas de voiture-Bleu voiture devant le parking-Vert accés autorisé)
+			<b>Leds :</b>on va les utilisé dans le système d’éclairage automatique.De plus ;on va les
+utiliser dans notre prortotype pour modéliser les appareils électromenagers de la
+maison.
 			</br>
-			<b>Capteur de température et humidité DHT11 
-</b> pour mesurer la température et l'humidité ambiantes que nous allons récupérer avec notre carte Arduino.</br>
+			<b>Photorésistance :
+</b> On va l’utiliser dans le système d’éclairage automatique</br>
+<b>Capteur ultrason:
+</b> On va l’utiliser dans le garage pour mesurer la distance entre le mur et la
+voiture. Donc, cela va nous permettre de détecter la présence de voiture, et aussi pour aider
+l’utilisateur à placer la voiture dans le garage en toute sécurité.</br>
+<b>le site web de controlle :</b> front end est une template html géré par une back end flask en python.
+<img src="img/articles/smart-home.png" alt="article">
+<b>back-end :</b> par mulithreading on a plusieurs taches une 
+pour : 
+<ol>
+  <li>affichage du site web à l'aide de la librairie flask<img src="img/articles/flask-deploy.png" alt="article"></li>
+  <li>reception des données depuis arduino : distance - humidité - température<img src="img/articles/smart-home-hardware1.png" alt="article"></li>
+  <li>envoie de la reponse depuis raspberry vers arduino
+<img src="img/articles/smart-home-hardware2.png" alt="article">
+  </li>
+</ol>
 		  </p>
 		  <br>
 		  <h3>CODE</h3>
-		  <iframe src=https://create.arduino.cc/editor/lakhdarazzedine/e6d3c9e9-de2e-4d0a-8546-dead10eb5236/preview?embed style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+<b>visit this repository :</b> <a style="color: blue;" href="https://github.com/Azzedine-prog/RaspberryPI-FLASK-Full-WEB-Server-HOME-CONTROLLER">Smart Home</a> 
         </article>
         <!--<aside class="card bg-secondary">
           <h2>Join Our Club</h2>
