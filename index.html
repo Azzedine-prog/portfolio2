@@ -56,10 +56,16 @@
 
     <div id="lead">
         <div id="lead-content">
-            <div align="center">
-                <img align="left" alt="Portrait of Azzedine Lakhdar" height="300" src="articles/img/azzedine.png" width="300" />
+            <div class="hero-portrait">
+                <div class="hero-portrait__frame">
+                    <img alt="Portrait of Azzedine Lakhdar" height="300" src="articles/img/azzedine.png" width="300" />
+                </div>
+                <div class="hero-portrait__label">
+                    <span data-lang="en">Automotive embedded leader</span>
+                    <span data-lang="fr" hidden>Leader des systèmes embarqués automobiles</span>
+                </div>
             </div>
-            <div align="right">
+            <div class="hero-intro">
                 <h1>Azzedine Lakhdar</h1>
                 <h2>
                     <span data-lang="en">Embedded Software Engineer at Lear Corporation</span>
@@ -69,10 +75,56 @@
                     <span data-lang="en">Delivering safe and connected body electronics for global automotive platforms.</span>
                     <span data-lang="fr" hidden>Concepteur d’électroniques de carrosserie fiables et connectées pour les plateformes automobiles mondiales.</span>
                 </p>
-                <a class="btn-rounded-white" href="documents/cv-azzedine-lakhdar-2.pdf">
-                    <span data-lang="en">Download CV</span>
-                    <span data-lang="fr" hidden>Télécharger le CV</span>
-                </a>
+                <ul class="hero-highlights">
+                    <li>
+                        <span data-lang="en">Driving AUTOSAR, UDS and cybersecurity convergence into production body control modules.</span>
+                        <span data-lang="fr" hidden>Pilote l’intégration AUTOSAR, UDS et cybersécurité dans les calculateurs de carrosserie en production.</span>
+                    </li>
+                    <li>
+                        <span data-lang="en">Coordinating cross-site releases for Renault, Nissan and Stellantis vehicle programs.</span>
+                        <span data-lang="fr" hidden>Coordonne les mises en production multi-sites pour les programmes véhicules Renault, Nissan et Stellantis.</span>
+                    </li>
+                    <li>
+                        <span data-lang="en">Mentoring engineers on diagnostic automation, CAPL scripting and Azure DevOps pipelines.</span>
+                        <span data-lang="fr" hidden>Mentor des ingénieurs sur l’automatisation du diagnostic, les scripts CAPL et les pipelines Azure DevOps.</span>
+                    </li>
+                </ul>
+                <div class="hero-cta">
+                    <a class="btn-rounded-white" href="documents/cv-azzedine-lakhdar-2.pdf">
+                        <span data-lang="en">Download CV</span>
+                        <span data-lang="fr" hidden>Télécharger le CV</span>
+                    </a>
+                    <a class="btn-gradient" href="#contact">
+                        <span data-lang="en">Let’s collaborate</span>
+                        <span data-lang="fr" hidden>Construisons ensemble</span>
+                    </a>
+                </div>
+                <div class="hero-metrics">
+                    <div class="hero-metric">
+                        <h3>
+                            <span data-lang="en">OEM Programs</span>
+                            <span data-lang="fr" hidden>Programmes OEM</span>
+                        </h3>
+                        <p data-lang="en">Renault, Nissan &amp; Stellantis body controllers deployed worldwide.</p>
+                        <p data-lang="fr" hidden>Calculateurs de carrosserie Renault, Nissan &amp; Stellantis déployés dans le monde.</p>
+                    </div>
+                    <div class="hero-metric">
+                        <h3>
+                            <span data-lang="en">Tech Stack</span>
+                            <span data-lang="fr" hidden>Pile technique</span>
+                        </h3>
+                        <p data-lang="en">AUTOSAR Classic, CAN/LIN diagnostics, ASPICE governance and Azure DevOps.</p>
+                        <p data-lang="fr" hidden>AUTOSAR Classic, diagnostics CAN/LIN, gouvernance ASPICE et Azure DevOps.</p>
+                    </div>
+                    <div class="hero-metric">
+                        <h3>
+                            <span data-lang="en">Team Impact</span>
+                            <span data-lang="fr" hidden>Impact équipe</span>
+                        </h3>
+                        <p data-lang="en">Mentoring and process automation that accelerate embedded delivery cycles.</p>
+                        <p data-lang="fr" hidden>Mentorat et automatisation qui accélèrent les cycles de livraison embarquée.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- End #lead-content -->
