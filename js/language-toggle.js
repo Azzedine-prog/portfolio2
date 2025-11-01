@@ -57,17 +57,6 @@
             element.hidden = elementLang !== activeLang;
         });
 
-        document.querySelectorAll("[data-date-en]").forEach((element) => {
-            const localizedDate = element.getAttribute(`data-date-${activeLang}`);
-            if (localizedDate) {
-                element.setAttribute("data-date", localizedDate);
-                const dateLabel = element.closest(".vtimeline-point")?.querySelector(".vtimeline-date");
-                if (dateLabel) {
-                    dateLabel.textContent = localizedDate;
-                }
-            }
-        });
-
         document.querySelectorAll(".language-toggle__btn").forEach((button) => {
             const buttonLang = button.getAttribute("data-switch-lang");
             const isActive = buttonLang === activeLang;

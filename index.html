@@ -7,149 +7,128 @@
     <title>AZZEDINE LAKHDAR</title>
     <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <link href="favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet" />
     <link href="libs/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />
     <meta content="-4uBtq0I3CrW2D_dk2Gbp9_NCrJj-HlN5MMUZfZQsJY" name="google-site-verification" />
 </head>
 <body>
-    <div class="shadow-large" id="mobile-menu-open">
+    <div class="mobile-toggle" id="mobile-menu-open" aria-controls="menu" aria-expanded="false" aria-label="Open navigation" role="button" tabindex="0">
         <i aria-hidden="true" class="fa fa-bars"></i>
     </div>
-    <!-- End #mobile-menu-toggle -->
-    <header>
-        <div id="mobile-menu-close">
-            <span data-lang="en">Close</span>
-            <span data-lang="fr" hidden>Fermer</span>
-            <i aria-hidden="true" class="fa fa-times"></i>
-        </div>
-        <ul class="shadow" id="menu">
-            <li>
-                <a href="#about"><span data-lang="en">About Me</span><span data-lang="fr" hidden>À propos</span></a>
-            </li>
-            <li>
-                <a href="#experience"><span data-lang="en">Experience</span><span data-lang="fr" hidden>Expérience</span></a>
-            </li>
-            <li>
-                <a href="#education"><span data-lang="en">Education</span><span data-lang="fr" hidden>Formation</span></a>
-            </li>
-            <li>
-                <a href="#projects"><span data-lang="en">Projects</span><span data-lang="fr" hidden>Projets</span></a>
-            </li>
-            <li>
-                <a href="#skills"><span data-lang="en">Skills</span><span data-lang="fr" hidden>Compétences</span></a>
-            </li>
-            <li>
-                <a href="#certification"><span data-lang="en">Certifications</span><span data-lang="fr" hidden>Certifications</span></a>
-            </li>
-            <li>
-                <a href="#contact"><span data-lang="en">Contact</span><span data-lang="fr" hidden>Contact</span></a>
-            </li>
-        </ul>
-        <div class="language-toggle" role="group" aria-label="Language toggle">
-            <button class="language-toggle__btn" data-switch-lang="en" type="button" aria-pressed="true">EN</button>
-            <button class="language-toggle__btn" data-switch-lang="fr" type="button" aria-pressed="false">FR</button>
+    <header class="site-header" id="top">
+        <div class="shell site-header__content">
+            <a class="site-header__brand" href="#lead">Azzedine Lakhdar</a>
+            <nav class="site-nav" id="menu" aria-label="Main navigation">
+                <div class="site-nav__close" id="mobile-menu-close" aria-controls="menu" aria-expanded="false" role="button" tabindex="0">
+                    <span data-lang="en">Close</span>
+                    <span data-lang="fr" hidden>Fermer</span>
+                    <i aria-hidden="true" class="fa fa-times"></i>
+                </div>
+                <ul class="site-nav__list">
+                    <li><a href="#about"><span data-lang="en">About</span><span data-lang="fr" hidden>À propos</span></a></li>
+                    <li><a href="#experience"><span data-lang="en">Experience</span><span data-lang="fr" hidden>Expérience</span></a></li>
+                    <li><a href="#education"><span data-lang="en">Education</span><span data-lang="fr" hidden>Formation</span></a></li>
+                    <li><a href="#projects"><span data-lang="en">Projects</span><span data-lang="fr" hidden>Projets</span></a></li>
+                    <li><a href="#skills"><span data-lang="en">Skills</span><span data-lang="fr" hidden>Compétences</span></a></li>
+                    <li><a href="#certification"><span data-lang="en">Certifications</span><span data-lang="fr" hidden>Certifications</span></a></li>
+                    <li><a href="#contact"><span data-lang="en">Contact</span><span data-lang="fr" hidden>Contact</span></a></li>
+                </ul>
+            </nav>
+            <div class="language-toggle" role="group" aria-label="Language toggle">
+                <button class="language-toggle__btn" data-switch-lang="en" type="button" aria-pressed="true">EN</button>
+                <button class="language-toggle__btn" data-switch-lang="fr" type="button" aria-pressed="false">FR</button>
+            </div>
         </div>
     </header>
-    <!-- End header -->
 
-    <div id="lead">
-        <div id="lead-content">
-            <div class="hero-portrait">
-                <div class="hero-portrait__frame">
-                    <img alt="Portrait of Azzedine Lakhdar" height="300" src="articles/img/azzedine.png" width="300" />
+    <main>
+        <section class="hero" id="lead">
+            <div class="shell hero__content">
+                <div class="hero-portrait">
+                    <div class="hero-portrait__frame">
+                        <img alt="Portrait of Azzedine Lakhdar" decoding="async" height="300" loading="lazy" src="articles/img/azzedine.png" width="300" />
+                    </div>
+                    <div class="hero-portrait__label">
+                        <span data-lang="en">Automotive embedded leader</span>
+                        <span data-lang="fr" hidden>Leader des systèmes embarqués automobiles</span>
+                    </div>
                 </div>
-                <div class="hero-portrait__label">
-                    <span data-lang="en">Automotive embedded leader</span>
-                    <span data-lang="fr" hidden>Leader des systèmes embarqués automobiles</span>
+                <div class="hero-intro">
+                    <h1>Azzedine Lakhdar</h1>
+                    <h2>
+                        <span data-lang="en">Embedded Software Engineer at Lear Corporation</span>
+                        <span data-lang="fr" hidden>Ingénieur logiciel embarqué chez Lear Corporation</span>
+                    </h2>
+                    <p class="lead-subtitle">
+                        <span data-lang="en">Delivering safe and connected body electronics for global automotive platforms.</span>
+                        <span data-lang="fr" hidden>Concepteur d’électroniques de carrosserie fiables et connectées pour les plateformes automobiles mondiales.</span>
+                    </p>
+                    <ul class="hero-highlights">
+                        <li>
+                            <span data-lang="en">Driving AUTOSAR, UDS and cybersecurity convergence into production body control modules.</span>
+                            <span data-lang="fr" hidden>Pilote l’intégration AUTOSAR, UDS et cybersécurité dans les calculateurs de carrosserie en production.</span>
+                        </li>
+                        <li>
+                            <span data-lang="en">Coordinating cross-site releases for Renault, Nissan and Stellantis vehicle programs.</span>
+                            <span data-lang="fr" hidden>Coordonne les mises en production multi-sites pour les programmes véhicules Renault, Nissan et Stellantis.</span>
+                        </li>
+                        <li>
+                            <span data-lang="en">Mentoring engineers on diagnostic automation, CAPL scripting and Azure DevOps pipelines.</span>
+                            <span data-lang="fr" hidden>Mentor des ingénieurs sur l’automatisation du diagnostic, les scripts CAPL et les pipelines Azure DevOps.</span>
+                        </li>
+                    </ul>
+                    <div class="hero-cta">
+                        <a class="btn btn--outline" href="documents/cv-azzedine-lakhdar-2.pdf">
+                            <span data-lang="en">Download CV</span>
+                            <span data-lang="fr" hidden>Télécharger le CV</span>
+                        </a>
+                        <a class="btn btn--gradient" href="#contact">
+                            <span data-lang="en">Let’s collaborate</span>
+                            <span data-lang="fr" hidden>Construisons ensemble</span>
+                        </a>
+                    </div>
+                    <div class="hero-metrics">
+                        <div class="metric-card">
+                            <h3>
+                                <span data-lang="en">OEM Programs</span>
+                                <span data-lang="fr" hidden>Programmes OEM</span>
+                            </h3>
+                            <p data-lang="en">Renault, Nissan &amp; Stellantis body controllers deployed worldwide.</p>
+                            <p data-lang="fr" hidden>Calculateurs de carrosserie Renault, Nissan &amp; Stellantis déployés dans le monde.</p>
+                        </div>
+                        <div class="metric-card">
+                            <h3>
+                                <span data-lang="en">Tech Stack</span>
+                                <span data-lang="fr" hidden>Pile technique</span>
+                            </h3>
+                            <p data-lang="en">AUTOSAR Classic, CAN/LIN diagnostics, ASPICE governance and Azure DevOps.</p>
+                            <p data-lang="fr" hidden>AUTOSAR Classic, diagnostics CAN/LIN, gouvernance ASPICE et Azure DevOps.</p>
+                        </div>
+                        <div class="metric-card">
+                            <h3>
+                                <span data-lang="en">Team Impact</span>
+                                <span data-lang="fr" hidden>Impact équipe</span>
+                            </h3>
+                            <p data-lang="en">Mentoring and process automation that accelerate embedded delivery cycles.</p>
+                            <p data-lang="fr" hidden>Mentorat et automatisation qui accélèrent les cycles de livraison embarquée.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-intro">
-                <h1>Azzedine Lakhdar</h1>
-                <h2>
-                    <span data-lang="en">Embedded Software Engineer at Lear Corporation</span>
-                    <span data-lang="fr" hidden>Ingénieur logiciel embarqué chez Lear Corporation</span>
-                </h2>
-                <p class="lead-subtitle">
-                    <span data-lang="en">Delivering safe and connected body electronics for global automotive platforms.</span>
-                    <span data-lang="fr" hidden>Concepteur d’électroniques de carrosserie fiables et connectées pour les plateformes automobiles mondiales.</span>
-                </p>
-                <ul class="hero-highlights">
-                    <li>
-                        <span data-lang="en">Driving AUTOSAR, UDS and cybersecurity convergence into production body control modules.</span>
-                        <span data-lang="fr" hidden>Pilote l’intégration AUTOSAR, UDS et cybersécurité dans les calculateurs de carrosserie en production.</span>
-                    </li>
-                    <li>
-                        <span data-lang="en">Coordinating cross-site releases for Renault, Nissan and Stellantis vehicle programs.</span>
-                        <span data-lang="fr" hidden>Coordonne les mises en production multi-sites pour les programmes véhicules Renault, Nissan et Stellantis.</span>
-                    </li>
-                    <li>
-                        <span data-lang="en">Mentoring engineers on diagnostic automation, CAPL scripting and Azure DevOps pipelines.</span>
-                        <span data-lang="fr" hidden>Mentor des ingénieurs sur l’automatisation du diagnostic, les scripts CAPL et les pipelines Azure DevOps.</span>
-                    </li>
-                </ul>
-                <div class="hero-cta">
-                    <a class="btn-rounded-white" href="documents/cv-azzedine-lakhdar-2.pdf">
-                        <span data-lang="en">Download CV</span>
-                        <span data-lang="fr" hidden>Télécharger le CV</span>
-                    </a>
-                    <a class="btn-gradient" href="#contact">
-                        <span data-lang="en">Let’s collaborate</span>
-                        <span data-lang="fr" hidden>Construisons ensemble</span>
-                    </a>
-                </div>
-                <div class="hero-metrics">
-                    <div class="hero-metric">
-                        <h3>
-                            <span data-lang="en">OEM Programs</span>
-                            <span data-lang="fr" hidden>Programmes OEM</span>
-                        </h3>
-                        <p data-lang="en">Renault, Nissan &amp; Stellantis body controllers deployed worldwide.</p>
-                        <p data-lang="fr" hidden>Calculateurs de carrosserie Renault, Nissan &amp; Stellantis déployés dans le monde.</p>
-                    </div>
-                    <div class="hero-metric">
-                        <h3>
-                            <span data-lang="en">Tech Stack</span>
-                            <span data-lang="fr" hidden>Pile technique</span>
-                        </h3>
-                        <p data-lang="en">AUTOSAR Classic, CAN/LIN diagnostics, ASPICE governance and Azure DevOps.</p>
-                        <p data-lang="fr" hidden>AUTOSAR Classic, diagnostics CAN/LIN, gouvernance ASPICE et Azure DevOps.</p>
-                    </div>
-                    <div class="hero-metric">
-                        <h3>
-                            <span data-lang="en">Team Impact</span>
-                            <span data-lang="fr" hidden>Impact équipe</span>
-                        </h3>
-                        <p data-lang="en">Mentoring and process automation that accelerate embedded delivery cycles.</p>
-                        <p data-lang="fr" hidden>Mentorat et automatisation qui accélèrent les cycles de livraison embarquée.</p>
-                    </div>
-                </div>
+            <div class="hero__scroll" id="lead-down">
+                <span aria-label="Scroll to content"><i class="fa fa-chevron-down" aria-hidden="true"></i></span>
             </div>
-        </div>
-        <!-- End #lead-content -->
+        </section>
 
-        <div id="lead-overlay"></div>
-
-        <div id="lead-down">
-            <span>
-                <i aria-hidden="true" class="fa fa-chevron-down"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
-    </div>
-    <!-- End #lead -->
-
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">
+        <section class="section" id="about">
+            <div class="shell">
+                <div class="section__header">
+                    <h2 class="section__title">
                         <span data-lang="en">About Me</span>
                         <span data-lang="fr" hidden>À propos</span>
                     </h2>
                 </div>
-                <div class="col-md-8">
+                <div class="section__panel stack">
                     <p data-lang="en">
                         I am <strong>Azzedine Lakhdar</strong>, an embedded software engineer at <strong>Lear Corporation</strong> driving the software roadmap for body control modules that power Renault, Nissan, and Stellantis vehicles.
                     </p>
@@ -168,377 +147,399 @@
                     <p data-lang="fr" hidden>
                         En dehors de Lear, j’accompagne des étudiants en systèmes embarqués, j’expérimente des solutions robotiques et je partage mes retours d’expérience sur LinkedIn pour accélérer la montée en compétence des ingénieurs.
                     </p>
-                    <h3>
-                        <span data-lang="en">My social links</span>
-                        <span data-lang="fr" hidden>Mes liens</span>
-                    </h3>
-                    <div class="col-sm-5 social">
+                    <div class="social-links">
+                        <h3>
+                            <span data-lang="en">My social links</span>
+                            <span data-lang="fr" hidden>Mes liens</span>
+                        </h3>
                         <ul>
-                            <li>
-                                <a href="https://github.com/Azzedine-prog" target="_blank"><i aria-hidden="true" class="fa fa-github"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://stackoverflow.com/users/14776320/azzedine" target="_blank"><i aria-hidden="true" class="fa fa-stack-overflow"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://linkedin.com/in/azzedine-lakhdar/" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.facebook.com/azzedine.lakhdar.inpt" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/azzedin37740194" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i></a>
-                            </li>
+                            <li><a href="https://github.com/Azzedine-prog" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-github"></i><span class="sr-only">GitHub</span></a></li>
+                            <li><a href="https://stackoverflow.com/users/14776320/azzedine" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-stack-overflow"></i><span class="sr-only">Stack Overflow</span></a></li>
+                            <li><a href="https://linkedin.com/in/azzedine-lakhdar/" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
+                            <li><a href="https://www.facebook.com/azzedine.lakhdar.inpt" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                            <li><a href="https://twitter.com/azzedin37740194" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End #about -->
+        </section>
 
-    <div class="background-alt" id="experience">
-        <h2 class="heading">
-            <span data-lang="en">Experience</span>
-            <span data-lang="fr" hidden>Expérience</span>
-        </h2>
-        <div id="experience-timeline">
-            <div class="timeline-entry" data-date="January 2022 – Present" data-date-en="January 2022 – Present" data-date-fr="Janvier 2022 – Aujourd’hui">
-                <h3>Lear Corporation</h3>
-                <h4>
-                    <span data-lang="en">Embedded Software Engineer</span>
-                    <span data-lang="fr" hidden>Ingénieur logiciel embarqué</span>
-                </h4>
-                <div data-lang="en">
-                    <ul>
-                        <li>Lead software integration for Renault and Nissan body control modules, coordinating multi-country teams through ASPICE-compliant releases.</li>
-                        <li>Configure AUTOSAR BSW, diagnostics, and cybersecurity features while maintaining ISO 26262 traceability and safety cases.</li>
-                        <li>Build automated validation dashboards with CAPL, Python, and Azure DevOps to reduce manual regression time by 30%.</li>
-                        <li>Serve as customer interface for design reviews, transforming feedback into actionable backlog items and software change requests.</li>
-                    </ul>
+        <section class="section section--accent" id="experience">
+            <div class="shell">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="en">Experience</span>
+                        <span data-lang="fr" hidden>Expérience</span>
+                    </h2>
                 </div>
-                <div data-lang="fr" hidden>
-                    <ul>
-                        <li>Pilote l’intégration logicielle des calculateurs de carrosserie Renault et Nissan en coordonnant des équipes multi-pays dans un cadre ASPICE.</li>
-                        <li>Configure les BSW AUTOSAR, diagnostics et fonctionnalités cybersécurité tout en garantissant la traçabilité ISO 26262.</li>
-                        <li>Construit des tableaux de bord de validation automatisés avec CAPL, Python et Azure DevOps, réduisant de 30&nbsp;% le temps de régression manuelle.</li>
-                        <li>Fait le lien avec les clients lors des design reviews et transforme les retours en demandes de changement actionnables.</li>
-                    </ul>
+                <div class="card-grid">
+                    <article class="experience-card glass-card">
+                        <header class="experience-card__header">
+                            <div>
+                                <h3>Lear Corporation</h3>
+                                <h4>
+                                    <span data-lang="en">Embedded Software Engineer</span>
+                                    <span data-lang="fr" hidden>Ingénieur logiciel embarqué</span>
+                                </h4>
+                            </div>
+                            <p class="experience-card__date">
+                                <span data-lang="en">January 2022 – Present</span>
+                                <span data-lang="fr" hidden>Janvier 2022 – Aujourd’hui</span>
+                            </p>
+                        </header>
+                        <ul data-lang="en">
+                            <li>Lead software integration for Renault and Nissan body control modules, coordinating multi-country teams through ASPICE-compliant releases.</li>
+                            <li>Configure AUTOSAR BSW, diagnostics, and cybersecurity features while maintaining ISO 26262 traceability and safety cases.</li>
+                            <li>Build automated validation dashboards with CAPL, Python, and Azure DevOps to reduce manual regression time by 30%.</li>
+                            <li>Serve as customer interface for design reviews, transforming feedback into actionable backlog items and software change requests.</li>
+                        </ul>
+                        <ul data-lang="fr" hidden>
+                            <li>Pilote l’intégration logicielle des calculateurs de carrosserie Renault et Nissan en coordonnant des équipes multi-pays dans un cadre ASPICE.</li>
+                            <li>Configure les BSW AUTOSAR, diagnostics et fonctionnalités cybersécurité tout en garantissant la traçabilité ISO 26262.</li>
+                            <li>Construit des tableaux de bord de validation automatisés avec CAPL, Python et Azure DevOps, réduisant de 30&nbsp;% le temps de régression manuelle.</li>
+                            <li>Fait le lien avec les clients lors des design reviews et transforme les retours en demandes de changement actionnables.</li>
+                        </ul>
+                    </article>
+                    <article class="experience-card glass-card">
+                        <header class="experience-card__header">
+                            <div>
+                                <h3>Lear Corporation</h3>
+                                <h4>
+                                    <span data-lang="en">Embedded Software Engineer Intern</span>
+                                    <span data-lang="fr" hidden>Stagiaire ingénieur logiciel embarqué</span>
+                                </h4>
+                            </div>
+                            <p class="experience-card__date">
+                                <span data-lang="en">January 2021 – January 2022</span>
+                                <span data-lang="fr" hidden>Janvier 2021 – Janvier 2022</span>
+                            </p>
+                        </header>
+                        <ul data-lang="en">
+                            <li>Implemented rear-lighting features and diagnostics in AUTOSAR using C, DaVinci Configurator, and CAPL.</li>
+                            <li>Prepared HIL/SIL validation campaigns, uncovering critical defects before customer milestones.</li>
+                            <li>Documented safety analysis, requirements traceability, and release notes aligned with ISO 26262 expectations.</li>
+                        </ul>
+                        <ul data-lang="fr" hidden>
+                            <li>Développe des fonctionnalités d’éclairage arrière et diagnostics AUTOSAR en C, DaVinci Configurator et CAPL.</li>
+                            <li>Prépare des campagnes de validation HIL/SIL permettant de détecter les anomalies critiques avant les jalons clients.</li>
+                            <li>Rédige les analyses de sécurité, la traçabilité des exigences et les notes de version conformes à l’ISO 26262.</li>
+                        </ul>
+                    </article>
+                    <article class="experience-card glass-card">
+                        <header class="experience-card__header">
+                            <div>
+                                <h3>Meetek</h3>
+                                <h4>
+                                    <span data-lang="en">Embedded Systems Intern</span>
+                                    <span data-lang="fr" hidden>Stagiaire systèmes embarqués</span>
+                                </h4>
+                            </div>
+                            <p class="experience-card__date">
+                                <span data-lang="en">June 2020 – September 2020</span>
+                                <span data-lang="fr" hidden>Juin 2020 – Septembre 2020</span>
+                            </p>
+                        </header>
+                        <ul data-lang="en">
+                            <li>Designed a Cortex-M4 smart weighing machine with custom analog front-end and industrial calibration routines.</li>
+                            <li>Delivered Modbus connectivity and production-ready PCB schematics for manufacturing partners.</li>
+                        </ul>
+                        <ul data-lang="fr" hidden>
+                            <li>Conçoit une machine de pesage intelligente à base de Cortex-M4 avec front-end analogique et routines de calibration industrielles.</li>
+                            <li>Met en œuvre la communication Modbus et fournit des schémas PCB prêts pour l’industrialisation.</li>
+                        </ul>
+                    </article>
+                    <article class="experience-card glass-card">
+                        <header class="experience-card__header">
+                            <div>
+                                <h3>CESE – INPT Embedded Systems Club</h3>
+                                <h4>
+                                    <span data-lang="en">Robotics Cell Lead</span>
+                                    <span data-lang="fr" hidden>Responsable cellule robotique</span>
+                                </h4>
+                            </div>
+                            <p class="experience-card__date">
+                                <span data-lang="en">October 2019 – July 2021</span>
+                                <span data-lang="fr" hidden>Octobre 2019 – Juillet 2021</span>
+                            </p>
+                        </header>
+                        <ul data-lang="en">
+                            <li>Coordinated multidisciplinary student squads to deliver robotics demos for national tech events.</li>
+                            <li>Hosted workshops on Arduino, Raspberry Pi, and IoT prototyping for new club members.</li>
+                        </ul>
+                        <ul data-lang="fr" hidden>
+                            <li>Coordonne des équipes étudiantes pluridisciplinaires pour livrer des démonstrations robotiques lors d’événements technologiques nationaux.</li>
+                            <li>Anime des ateliers Arduino, Raspberry Pi et prototypage IoT pour les nouveaux membres.</li>
+                        </ul>
+                    </article>
                 </div>
             </div>
-            <div class="timeline-entry" data-date="January 2021 – January 2022" data-date-en="January 2021 – January 2022" data-date-fr="Janvier 2021 – Janvier 2022">
-                <h3>Lear Corporation</h3>
-                <h4>
-                    <span data-lang="en">Embedded Software Engineer Intern</span>
-                    <span data-lang="fr" hidden>Stagiaire ingénieur logiciel embarqué</span>
-                </h4>
-                <div data-lang="en">
-                    <ul>
-                        <li>Implemented rear-lighting features and diagnostics in AUTOSAR using C, DaVinci Configurator, and CAPL.</li>
-                        <li>Prepared HIL/SIL validation campaigns, uncovering critical defects before customer milestones.</li>
-                        <li>Documented safety analysis, requirements traceability, and release notes aligned with ISO 26262 expectations.</li>
-                    </ul>
+        </section>
+
+        <section class="section" id="education">
+            <div class="shell">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="en">Education</span>
+                        <span data-lang="fr" hidden>Formation</span>
+                    </h2>
                 </div>
-                <div data-lang="fr" hidden>
-                    <ul>
-                        <li>Développe des fonctionnalités d’éclairage arrière et diagnostics AUTOSAR en C, DaVinci Configurator et CAPL.</li>
-                        <li>Prépare des campagnes de validation HIL/SIL permettant de détecter les anomalies critiques avant les jalons clients.</li>
-                        <li>Rédige les analyses de sécurité, la traçabilité des exigences et les notes de version conformes à l’ISO 26262.</li>
-                    </ul>
+                <div class="card-grid card-grid--two">
+                    <article class="glass-card">
+                        <header class="card-header">
+                            <h3>Institut National des Postes et Télécommunications (INPT)</h3>
+                            <p class="card-date">
+                                <span data-lang="en">2019 – 2022</span>
+                                <span data-lang="fr" hidden>2019 – 2022</span>
+                            </p>
+                        </header>
+                        <h4>
+                            <span data-lang="en">Engineering Degree, Embedded Systems &amp; Digital Services</span>
+                            <span data-lang="fr" hidden>Diplôme d’ingénieur, systèmes embarqués et services numériques</span>
+                        </h4>
+                        <p data-lang="en">Graduated with honors after completing projects spanning automotive electronics, industrial IoT, and signal processing.</p>
+                        <p data-lang="fr" hidden>Diplômé avec mention après des projets couvrant l’électronique automobile, l’IoT industriel et le traitement du signal.</p>
+                    </article>
+                    <article class="glass-card">
+                        <header class="card-header">
+                            <h3>CPGE Reda Slaoui, Agadir</h3>
+                            <p class="card-date">
+                                <span data-lang="en">2017 – 2019</span>
+                                <span data-lang="fr" hidden>2017 – 2019</span>
+                            </p>
+                        </header>
+                        <h4>
+                            <span data-lang="en">MPSI/MP Preparatory Classes</span>
+                            <span data-lang="fr" hidden>Classes préparatoires MPSI/MP</span>
+                        </h4>
+                        <p data-lang="en">Two-year intensive program focused on mathematics, physics, and engineering sciences.</p>
+                        <p data-lang="fr" hidden>Programme intensif de deux ans centré sur les mathématiques, la physique et les sciences de l’ingénieur.</p>
+                    </article>
                 </div>
             </div>
-            <div class="timeline-entry" data-date="June 2020 – September 2020" data-date-en="June 2020 – September 2020" data-date-fr="Juin 2020 – Septembre 2020">
-                <h3>Meetek</h3>
-                <h4>
-                    <span data-lang="en">Embedded Systems Intern</span>
-                    <span data-lang="fr" hidden>Stagiaire systèmes embarqués</span>
-                </h4>
-                <div data-lang="en">
-                    <ul>
-                        <li>Designed a Cortex-M4 smart weighing machine with custom analog front-end and industrial calibration routines.</li>
-                        <li>Delivered Modbus connectivity and production-ready PCB schematics for manufacturing partners.</li>
-                    </ul>
-                </div>
-                <div data-lang="fr" hidden>
-                    <ul>
-                        <li>Conçoit une machine de pesage intelligente à base de Cortex-M4 avec front-end analogique et routines de calibration industrielles.</li>
-                        <li>Met en œuvre la communication Modbus et fournit des schémas PCB prêts pour l’industrialisation.</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="timeline-entry" data-date="October 2019 – July 2021" data-date-en="October 2019 – July 2021" data-date-fr="Octobre 2019 – Juillet 2021">
-                <h3>CESE – INPT Embedded Systems Club</h3>
-                <h4>
-                    <span data-lang="en">Robotics Cell Lead</span>
-                    <span data-lang="fr" hidden>Responsable cellule robotique</span>
-                </h4>
-                <div data-lang="en">
-                    <ul>
-                        <li>Coordinated multidisciplinary student squads to deliver robotics demos for national tech events.</li>
-                        <li>Hosted workshops on Arduino, Raspberry Pi, and IoT prototyping for new club members.</li>
-                    </ul>
-                </div>
-                <div data-lang="fr" hidden>
-                    <ul>
-                        <li>Coordonne des équipes étudiantes pluridisciplinaires pour livrer des démonstrations robotiques lors d’événements technologiques nationaux.</li>
-                        <li>Anime des ateliers Arduino, Raspberry Pi et prototypage IoT pour les nouveaux membres.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End #experience -->
+        </section>
 
-    <div id="education">
-        <h2 class="heading">
-            <span data-lang="en">Education</span>
-            <span data-lang="fr" hidden>Formation</span>
-        </h2>
-        <div class="education-block">
-            <h3>Institut National des Postes et Télécommunications (INPT)</h3>
-            <span class="education-date" data-lang="en">2019 – 2022</span>
-            <span class="education-date" data-lang="fr" hidden>2019 – 2022</span>
-            <h4>
-                <span data-lang="en">Engineering Degree, Embedded Systems &amp; Digital Services</span>
-                <span data-lang="fr" hidden>Diplôme d’ingénieur, systèmes embarqués et services numériques</span>
-            </h4>
-            <p data-lang="en">Graduated with honors after completing projects spanning automotive electronics, industrial IoT, and signal processing.</p>
-            <p data-lang="fr" hidden>Diplômé avec mention après des projets couvrant l’électronique automobile, l’IoT industriel et le traitement du signal.</p>
-        </div>
-        <div class="education-block">
-            <h3>CPGE Reda Slaoui, Agadir</h3>
-            <span class="education-date" data-lang="en">2017 – 2019</span>
-            <span class="education-date" data-lang="fr" hidden>2017 – 2019</span>
-            <h4>
-                <span data-lang="en">MPSI/MP Preparatory Classes</span>
-                <span data-lang="fr" hidden>Classes préparatoires MPSI/MP</span>
-            </h4>
-            <p data-lang="en">Two-year intensive program focused on mathematics, physics, and engineering sciences.</p>
-            <p data-lang="fr" hidden>Programme intensif de deux ans centré sur les mathématiques, la physique et les sciences de l’ingénieur.</p>
-        </div>
-    </div>
-    <!-- End #education -->
-
-    <div id="certification">
-        <h2 class="heading">
-            <span data-lang="en">Certifications</span>
-            <span data-lang="fr" hidden>Certifications</span>
-        </h2>
-        <div class="education-block">
-            <h3>
-                <span data-lang="en">ASPICE Practitioner Path</span>
-                <span data-lang="fr" hidden>Parcours praticien ASPICE</span>
-            </h3>
-            <h4>Lear Corporation</h4>
-        </div>
-        <div class="education-block">
-            <h3>Functional Safety ISO 26262</h3>
-            <h4>Lear Corporation</h4>
-        </div>
-        <div class="education-block">
-            <h3>Advanced Trace32 Debugging</h3>
-            <h4>Lear Corporation</h4>
-        </div>
-        <div class="education-block">
-            <h3>ISTQB Foundation Level</h3>
-            <h4>Verity Software</h4>
-        </div>
-    </div>
-    <!-- End #certification -->
-
-    <div class="background-alt" id="projects">
-        <h2 class="heading">
-            <span data-lang="en">Projects</span>
-            <span data-lang="fr" hidden>Projets</span>
-        </h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img alt="Smart parking platform screenshot" src="images/parking.png" />
-                    </div>
-                    <div class="project-info">
+        <section class="section section--accent" id="certification">
+            <div class="shell">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="en">Certifications</span>
+                        <span data-lang="fr" hidden>Certifications</span>
+                    </h2>
+                </div>
+                <div class="card-grid card-grid--two">
+                    <article class="glass-card">
                         <h3>
-                            <span data-lang="en">Smart Parking Platform</span>
-                            <span data-lang="fr" hidden>Plateforme Smart Parking</span>
+                            <span data-lang="en">ASPICE Practitioner Path</span>
+                            <span data-lang="fr" hidden>Parcours praticien ASPICE</span>
                         </h3>
-                        <p data-lang="en">Arduino-based parking controller with automatic barriers, dynamic pricing rules, and remote telemetry dashboard.</p>
-                        <p data-lang="fr" hidden>Contrôleur de parking basé sur Arduino avec barrières automatiques, tarification dynamique et supervision à distance.</p>
-                        <a href="articles/smart-parking.html">
-                            <span data-lang="en">View Project</span>
-                            <span data-lang="fr" hidden>Voir le projet</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img alt="Smart home project" src="images/cese.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Smart Home</h3>
-                        <p data-lang="en">Club-led connected home demonstrator orchestrating MQTT automation, security alerts, and energy dashboards.</p>
-                        <p data-lang="fr" hidden>Démo de maison connectée pilotée par le club avec automatisation MQTT, alertes sécurité et tableaux de bord énergétiques.</p>
-                        <a href="#">
-                            <span data-lang="en">View Project</span>
-                            <span data-lang="fr" hidden>Voir le projet</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img alt="PLL PCB" src="images/pcb.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>
-                            <span data-lang="en">PLL PCB Design</span>
-                            <span data-lang="fr" hidden>Conception PCB PLL</span>
-                        </h3>
-                        <p data-lang="en">Frequency synthesis evaluation board enabling modulation and demodulation experiments for academic labs.</p>
-                        <p data-lang="fr" hidden>Carte d’évaluation de synthèse de fréquence dédiée aux travaux pratiques de modulation et démodulation.</p>
-                        <a href="#">
-                            <span data-lang="en">View Project</span>
-                            <span data-lang="fr" hidden>Voir le projet</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img alt="Raspberry Pi home control" src="images/raspberry.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>Raspberry Pi Home Control</h3>
-                        <p data-lang="en">Hybrid Raspberry Pi and Arduino system orchestrating garage access, HVAC monitoring, and energy-saving rules.</p>
-                        <p data-lang="fr" hidden>Système hybride Raspberry Pi et Arduino pilotant l’accès garage, la surveillance climatique et les scénarios d’économie d’énergie.</p>
-                        <a href="articles/smart-home.html">
-                            <span data-lang="en">View Project</span>
-                            <span data-lang="fr" hidden>Voir le projet</span>
-                        </a>
-                    </div>
-                </div>
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img alt="Automated depot concept" src="images/Smart-Supermarket.jpg" />
-                    </div>
-                    <div class="project-info">
-                        <h3>
-                            <span data-lang="en">Automated Depot</span>
-                            <span data-lang="fr" hidden>Dépôt automatisé</span>
-                        </h3>
-                        <p data-lang="en">End-to-end inventory automation concept leveraging RFID tracking, conveyors, and embedded controllers.</p>
-                        <p data-lang="fr" hidden>Concept d’automatisation complète des stocks avec suivi RFID, convoyeurs et contrôleurs embarqués.</p>
-                        <a href="#">
-                            <span data-lang="en">View Project</span>
-                            <span data-lang="fr" hidden>Voir le projet</span>
-                        </a>
-                    </div>
+                        <p>Lear Corporation</p>
+                    </article>
+                    <article class="glass-card">
+                        <h3>Functional Safety ISO 26262</h3>
+                        <p>Lear Corporation</p>
+                    </article>
+                    <article class="glass-card">
+                        <h3>Advanced Trace32 Debugging</h3>
+                        <p>Lear Corporation</p>
+                    </article>
+                    <article class="glass-card">
+                        <h3>ISTQB Foundation Level</h3>
+                        <p>Verity Software</p>
+                    </article>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- End #projects -->
+        </section>
 
-    <div id="skills">
-        <h2 class="heading">
-            <span data-lang="en">Skills</span>
-            <span data-lang="fr" hidden>Compétences</span>
-        </h2>
-        <ul>
-            <li>
-                <span data-lang="en">C/C++ for AUTOSAR Classic, embedded diagnostics, and low-level drivers</span>
-                <span data-lang="fr" hidden>C/C++ pour AUTOSAR Classic, diagnostics embarqués et drivers bas niveau</span>
-            </li>
-            <li>
-                <span data-lang="en">Python &amp; CAPL automation for validation and tooling</span>
-                <span data-lang="fr" hidden>Automatisation Python &amp; CAPL pour la validation et les outils</span>
-            </li>
-            <li>
-                <span data-lang="en">Azure DevOps, Git, and CI/CD governance</span>
-                <span data-lang="fr" hidden>Azure DevOps, Git et gouvernance CI/CD</span>
-            </li>
-            <li>
-                <span data-lang="en">CAN, LIN, UDS, and cybersecurity diagnostics</span>
-                <span data-lang="fr" hidden>Diagnostics CAN, LIN, UDS et cybersécurité</span>
-            </li>
-            <li>
-                <span data-lang="en">Trace32, CANoe, and Vector toolchain expertise</span>
-                <span data-lang="fr" hidden>Maîtrise de Trace32, CANoe et de la suite Vector</span>
-            </li>
-            <li>
-                <span data-lang="en">ISO 26262 functional safety and ASPICE compliance</span>
-                <span data-lang="fr" hidden>Sécurité fonctionnelle ISO 26262 et conformité ASPICE</span>
-            </li>
-            <li>
-                <span data-lang="en">MATLAB/Simulink modelling and control design</span>
-                <span data-lang="fr" hidden>Modélisation MATLAB/Simulink et conception de contrôle</span>
-            </li>
-            <li>
-                <span data-lang="en">PCB design, prototyping, and hardware bring-up</span>
-                <span data-lang="fr" hidden>Conception PCB, prototypage et mise au point hardware</span>
-            </li>
-        </ul>
-    </div>
-    <!-- End #skills -->
-
-    <div id="contact">
-        <h2>
-            <span data-lang="en">Get in Touch</span>
-            <span data-lang="fr" hidden>Contactez-moi</span>
-        </h2>
-        <div id="contact-form">
-            <form action="https://formspree.io/f/mayaqdnn" method="POST">
-                <input name="_subject" type="hidden" value="Contact request from personal website" />
-                <input name="_replyto" placeholder="Your email" data-placeholder-en="Your email" data-placeholder-fr="Votre e-mail" required type="email" />
-                <textarea name="message" placeholder="Your message" data-placeholder-en="Your message" data-placeholder-fr="Votre message" required></textarea>
-                <button type="submit">
-                    <span data-lang="en">Send</span>
-                    <span data-lang="fr" hidden>Envoyer</span>
-                </button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
-    </div>
-    <!-- End #contact -->
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        <span data-lang="en">Copyright © 2024 AZZEDINE LAKHDAR</span>
-                        <span data-lang="fr" hidden>Copyright © 2024 AZZEDINE LAKHDAR</span>
-                    </p>
+        <section class="section" id="projects">
+            <div class="shell">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="en">Projects</span>
+                        <span data-lang="fr" hidden>Projets</span>
+                    </h2>
                 </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i aria-hidden="true" class="fa fa-chevron-up"></i>
-                    </span>
+                <div class="card-grid card-grid--projects">
+                    <article class="project-card glass-card">
+                        <div class="project-card__media">
+                            <img alt="Smart parking platform screenshot" decoding="async" loading="lazy" src="images/parking.png" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3>
+                                <span data-lang="en">Smart Parking Platform</span>
+                                <span data-lang="fr" hidden>Plateforme Smart Parking</span>
+                            </h3>
+                            <p data-lang="en">Arduino-based parking controller with automatic barriers, dynamic pricing rules, and remote telemetry dashboard.</p>
+                            <p data-lang="fr" hidden>Contrôleur de parking basé sur Arduino avec barrières automatiques, tarification dynamique et supervision à distance.</p>
+                            <a class="project-card__link" href="articles/smart-parking.html">
+                                <span data-lang="en">View Project</span>
+                                <span data-lang="fr" hidden>Voir le projet</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <div class="project-card__media">
+                            <img alt="Smart home project" decoding="async" loading="lazy" src="images/cese.jpg" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3>Smart Home</h3>
+                            <p data-lang="en">Club-led connected home demonstrator orchestrating MQTT automation, security alerts, and energy dashboards.</p>
+                            <p data-lang="fr" hidden>Démo de maison connectée pilotée par le club avec automatisation MQTT, alertes sécurité et tableaux de bord énergétiques.</p>
+                            <a class="project-card__link" href="#">
+                                <span data-lang="en">View Project</span>
+                                <span data-lang="fr" hidden>Voir le projet</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <div class="project-card__media">
+                            <img alt="PLL PCB" decoding="async" loading="lazy" src="images/pcb.jpg" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3>
+                                <span data-lang="en">PLL PCB Design</span>
+                                <span data-lang="fr" hidden>Conception PCB PLL</span>
+                            </h3>
+                            <p data-lang="en">Frequency synthesis evaluation board enabling modulation and demodulation experiments for academic labs.</p>
+                            <p data-lang="fr" hidden>Carte d’évaluation de synthèse de fréquence dédiée aux travaux pratiques de modulation et démodulation.</p>
+                            <a class="project-card__link" href="#">
+                                <span data-lang="en">View Project</span>
+                                <span data-lang="fr" hidden>Voir le projet</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <div class="project-card__media">
+                            <img alt="Raspberry Pi home control" decoding="async" loading="lazy" src="images/raspberry.jpg" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3>Raspberry Pi Home Control</h3>
+                            <p data-lang="en">Hybrid Raspberry Pi and Arduino system orchestrating garage access, HVAC monitoring, and energy-saving rules.</p>
+                            <p data-lang="fr" hidden>Système hybride Raspberry Pi et Arduino pilotant l’accès garage, la surveillance climatique et les scénarios d’économie d’énergie.</p>
+                            <a class="project-card__link" href="articles/smart-home.html">
+                                <span data-lang="en">View Project</span>
+                                <span data-lang="fr" hidden>Voir le projet</span>
+                            </a>
+                        </div>
+                    </article>
+                    <article class="project-card glass-card">
+                        <div class="project-card__media">
+                            <img alt="Automated depot concept" decoding="async" loading="lazy" src="images/Smart-Supermarket.jpg" />
+                        </div>
+                        <div class="project-card__body">
+                            <h3>
+                                <span data-lang="en">Automated Depot</span>
+                                <span data-lang="fr" hidden>Dépôt automatisé</span>
+                            </h3>
+                            <p data-lang="en">End-to-end inventory automation concept leveraging RFID tracking, conveyors, and embedded controllers.</p>
+                            <p data-lang="fr" hidden>Concept d’automatisation complète des stocks avec suivi RFID, convoyeurs et contrôleurs embarqués.</p>
+                            <a class="project-card__link" href="#">
+                                <span data-lang="en">View Project</span>
+                                <span data-lang="fr" hidden>Voir le projet</span>
+                            </a>
+                        </div>
+                    </article>
                 </div>
-                <div class="col-sm-5 social">
-                    <ul>
+            </div>
+        </section>
+
+        <section class="section section--accent" id="skills">
+            <div class="shell">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="en">Skills</span>
+                        <span data-lang="fr" hidden>Compétences</span>
+                    </h2>
+                </div>
+                <div class="glass-card">
+                    <ul class="skills-list">
                         <li>
-                            <a href="https://github.com/Azzedine-prog" target="_blank"><i aria-hidden="true" class="fa fa-github"></i></a>
+                            <span data-lang="en">C/C++ for AUTOSAR Classic, embedded diagnostics, and low-level drivers</span>
+                            <span data-lang="fr" hidden>C/C++ pour AUTOSAR Classic, diagnostics embarqués et drivers bas niveau</span>
                         </li>
                         <li>
-                            <a href="https://stackoverflow.com/users/14776320/azzedine" target="_blank"><i aria-hidden="true" class="fa fa-stack-overflow"></i></a>
+                            <span data-lang="en">Python &amp; CAPL automation for validation and tooling</span>
+                            <span data-lang="fr" hidden>Automatisation Python &amp; CAPL pour la validation et les outils</span>
                         </li>
                         <li>
-                            <a href="https://linkedin.com/in/azzedine-lakhdar/" target="_blank"><i aria-hidden="true" class="fa fa-linkedin"></i></a>
+                            <span data-lang="en">Azure DevOps, Git, and CI/CD governance</span>
+                            <span data-lang="fr" hidden>Azure DevOps, Git et gouvernance CI/CD</span>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/azzedine.lakhdar.inpt" target="_blank"><i aria-hidden="true" class="fa fa-facebook"></i></a>
+                            <span data-lang="en">CAN, LIN, UDS, and cybersecurity diagnostics</span>
+                            <span data-lang="fr" hidden>Diagnostics CAN, LIN, UDS et cybersécurité</span>
                         </li>
                         <li>
-                            <a href="https://twitter.com/azzedin37740194" target="_blank"><i aria-hidden="true" class="fa fa-twitter"></i></a>
+                            <span data-lang="en">Trace32, CANoe, and Vector toolchain expertise</span>
+                            <span data-lang="fr" hidden>Maîtrise de Trace32, CANoe et de la suite Vector</span>
+                        </li>
+                        <li>
+                            <span data-lang="en">ISO 26262 functional safety and ASPICE compliance</span>
+                            <span data-lang="fr" hidden>Sécurité fonctionnelle ISO 26262 et conformité ASPICE</span>
+                        </li>
+                        <li>
+                            <span data-lang="en">MATLAB/Simulink modelling and control design</span>
+                            <span data-lang="fr" hidden>Modélisation MATLAB/Simulink et conception de contrôle</span>
+                        </li>
+                        <li>
+                            <span data-lang="en">PCB design, prototyping, and hardware bring-up</span>
+                            <span data-lang="fr" hidden>Conception PCB, prototypage et mise au point hardware</span>
                         </li>
                     </ul>
                 </div>
             </div>
+        </section>
+
+        <section class="section" id="contact">
+            <div class="shell">
+                <div class="section__header">
+                    <h2 class="section__title">
+                        <span data-lang="en">Get in Touch</span>
+                        <span data-lang="fr" hidden>Contactez-moi</span>
+                    </h2>
+                </div>
+                <div class="section__panel contact-panel">
+                    <form action="https://formspree.io/f/mayaqdnn" method="POST" class="contact-form">
+                        <input name="_subject" type="hidden" value="Contact request from personal website" />
+                        <label class="contact-form__field">
+                            <span data-lang="en">Your email</span>
+                            <span data-lang="fr" hidden>Votre e-mail</span>
+                            <input name="_replyto" placeholder="Your email" data-placeholder-en="Your email" data-placeholder-fr="Votre e-mail" required type="email" />
+                        </label>
+                        <label class="contact-form__field">
+                            <span data-lang="en">Your message</span>
+                            <span data-lang="fr" hidden>Votre message</span>
+                            <textarea name="message" placeholder="Your message" data-placeholder-en="Your message" data-placeholder-fr="Votre message" required></textarea>
+                        </label>
+                        <button class="btn btn--gradient" type="submit">
+                            <span data-lang="en">Send</span>
+                            <span data-lang="fr" hidden>Envoyer</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="shell site-footer__content">
+            <p>
+                <span data-lang="en">Copyright © 2024 AZZEDINE LAKHDAR</span>
+                <span data-lang="fr" hidden>Copyright © 2024 AZZEDINE LAKHDAR</span>
+            </p>
+            <button class="to-top" id="to-top" type="button" aria-label="Back to top">
+                <i aria-hidden="true" class="fa fa-chevron-up"></i>
+            </button>
+            <ul class="social-links social-links--footer">
+                <li><a href="https://github.com/Azzedine-prog" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-github"></i><span class="sr-only">GitHub</span></a></li>
+                <li><a href="https://stackoverflow.com/users/14776320/azzedine" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-stack-overflow"></i><span class="sr-only">Stack Overflow</span></a></li>
+                <li><a href="https://linkedin.com/in/azzedine-lakhdar/" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-linkedin"></i><span class="sr-only">LinkedIn</span></a></li>
+                <li><a href="https://www.facebook.com/azzedine.lakhdar.inpt" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-facebook"></i><span class="sr-only">Facebook</span></a></li>
+                <li><a href="https://twitter.com/azzedin37740194" target="_blank" rel="noreferrer"><i aria-hidden="true" class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a></li>
+            </ul>
         </div>
     </footer>
-    <!-- End footer -->
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/scripts.min.js"></script>
-    <script src="js/language-toggle.js"></script>
+    <script defer src="js/main.js"></script>
+    <script defer src="js/language-toggle.js"></script>
 </body>
 </html>
