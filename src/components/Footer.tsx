@@ -21,7 +21,7 @@ export default function Footer() {
                     <a href="https://github.com/Azzedine-prog" target="_blank" className="text-muted hover:text-primary transition-colors">
                         <Github size={20} />
                     </a>
-                    <a href="https://linkedin.com/in/azzedine-lakhdar/" target="_blank" className="text-muted hover:text-primary transition-colors">
+                    <a href="https://www.linkedin.com/in/azzedinelakhdar/" target="_blank" className="text-muted hover:text-primary transition-colors">
                         <Linkedin size={20} />
                     </a>
                     <a href="mailto:azzedine.lakhdar.ing@gmail.com" className="text-muted hover:text-primary transition-colors">

@@ -14,12 +14,19 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
     return (
         <motion.div
             onClick={() => router.push(`/projects/${project.slug}`)}
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            whileHover={{ y: -5 }}
-            viewport={{ once: true }}
-            transition={{ delay: index * 0.1 }}
-            className="glass-panel group flex flex-col h-full transition-all duration-500 cursor-pointer overflow-hidden"
+            whileHover={{
+                y: -10,
+                transition: { duration: 0.4, ease: "easeOut" }
+            }}
+            viewport={{ once: true, margin: "-50px" }}
+            transition={{
+                delay: index * 0.1,
+                duration: 0.8,
+                ease: [0.21, 0.47, 0.32, 0.98]
+            }}
+            className="glass-panel group flex flex-col h-full cursor-pointer overflow-hidden border-primary/5 hover:border-primary/30 hover:shadow-[0_20px_40px_rgba(0,0,0,0.4),0_0_20px_rgba(240,168,48,0.1)] transition-colors duration-500"
         >
             {/* Thumbnail */}
             <div className="relative h-48 overflow-hidden -mx-6 -mt-4 mb-6 rounded-t-2xl">

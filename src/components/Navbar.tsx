@@ -1,8 +1,9 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Menu, X } from '@/components/Icons';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Mail, Github, Linkedin, Menu, X, ChevronRight } from '@/components/Icons';
+import Magnetic from '@/components/Magnetic';
 
 const navLinks = [
     { name: 'Home', href: '#hero' },
@@ -60,21 +61,24 @@ export default function Navbar() {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-7">
                     {navLinks.map((link) => (
-                        <a
-                            key={link.name}
-                            href={link.href}
-                            onClick={(e) => scrollToSection(e, link.href)}
-                            className="text-sm font-medium text-muted hover:text-primary transition-colors duration-200"
-                        >
-                            {link.name}
-                        </a>
+                        <Magnetic key={link.name}>
+                            <a
+                                href={link.href}
+                                onClick={(e) => scrollToSection(e, link.href)}
+                                className="text-sm font-medium text-muted hover:text-primary transition-colors py-2 px-1"
+                            >
+                                {link.name}
+                            </a>
+                        </Magnetic>
                     ))}
-                    <a
-                        href="mailto:azzedine.lakhdar.ing@gmail.com"
-                        className="px-4 py-2 bg-primary text-background rounded-lg text-sm font-bold hover:shadow-[0_0_20px_rgba(240,168,48,0.4)] hover:scale-105 transition-all duration-200"
-                    >
-                        Contact Me
-                    </a>
+                    <Magnetic>
+                        <a
+                            href="mailto:azzedine.lakhdar.ing@gmail.com"
+                            className="px-4 py-2 bg-primary text-background rounded-lg text-sm font-bold hover:shadow-[0_0_20px_rgba(240,168,48,0.4)] hover:scale-105 transition-all duration-200"
+                        >
+                            Contact Me
+                        </a>
+                    </Magnetic>
                 </div>
 
                 {/* Mobile Toggle */}

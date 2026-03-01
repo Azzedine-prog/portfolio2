@@ -191,21 +191,46 @@ body {
 }
 
 /* ============================================================
-   ANIMATED GRADIENT BORDER
+   CURSOR SPOTLIGHT
    ============================================================ */
-@keyframes border-rotate {
-    from {
-        --angle: 0deg;
+.cursor-spotlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 10;
+    background: radial-gradient(600px circle at var(--x) var(--y),
+            rgba(240, 168, 48, 0.08),
+            transparent 80%);
+}
+
+/* ============================================================
+   TYPING CURSOR
+   ============================================================ */
+@keyframes blink {
+
+    0%,
+    100% {
+        opacity: 1;
     }
 
-    to {
-        --angle: 360deg;
+    50% {
+        opacity: 0;
     }
 }
 
-.animated-border {
-    border: 1px solid transparent;
-    background: linear-gradient(#080C18, #080C18) padding-box,
-        linear-gradient(135deg, rgba(240, 168, 48, 0.6), rgba(107, 127, 212, 0.3), rgba(240, 168, 48, 0.1)) border-box;
-    border-radius: 16px;
+.typing-cursor {
+    display: inline-block;
+    width: 8px;
+    height: 1.2em;
+    background: #F0A830;
+    margin-left: 4px;
+    vertical-align: middle;
+    animation: blink 0.8s infinite;
+}
+
+.terminal-text {
+    font-family: var(--font-roboto-mono), monospace;
 }
